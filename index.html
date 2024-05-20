@@ -710,17 +710,17 @@ var demographics = {
  timeline.push(save_data); // ACTUALLY PUSHING DATA TO SERVER
 
       
-   var goodbye = {
+  var goodbye = {
       type: jsPsychHtmlButtonResponse,
       stimulus: function(){
         output = "Woohoo! You have finished the experiment. <br>";
           if(urlvar.workerId.length > 7){
-              output = output + "<strong> Here is your secret code: C1LakfBOB </strong><br>";
+              output = output + "<strong> Here is your secret code: C58AKPLN </strong><br>";
           }
-        output = output + "You may now close this screen. Goodbye!<br><br>";
+        output = output + "Click the button below to complete the experiment. Goodbye!<br><br>";
       return output;
       },
-      choices: ["Complete Experiment"]    
+      choices: ["<a href='https://app.prolific.com/submissions/complete?cc=C58AKPLN'>Complete Experiment</a>"]      
    };
     timeline.push(goodbye);
 
