@@ -621,7 +621,7 @@ var validation_procedure_places = {
     timeline_variables: validation_shuffled_doubled,
     sample :{
         type: 'without-replacement',
-        size: 10
+        size: 1//0
     }
 };
       
@@ -631,7 +631,7 @@ var trial_procedure_places = {
     randomize_order: true,
     sample: {
         type: 'with-replacement',
-        size: 50
+        size: 5//0
     }
 };
           
@@ -657,7 +657,7 @@ var quick_break = {
 var place_procedure = {
     timeline: [trial_procedure_places, check_places, validation_procedure_places, check_places],
     randomize_order: true,
-    repetitions: 5
+    repetitions: 1//5
 };
       
       timeline.push(place_procedure);
